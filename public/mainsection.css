@@ -27,6 +27,9 @@ body {
 
 }
 
+nav{
+    padding: 0 100px;
+}
 .navbar-brand {
     column-gap: 20px;
     font-style: normal;
@@ -314,8 +317,7 @@ padding: 0 30px;
 }
 
 /* Foter end */
-
-@media (max-width: 1536px){
+@media (max-width: 1750px){
     
     .navbar-brand {
         column-gap: 15px;
@@ -347,6 +349,17 @@ padding: 0 30px;
         height:35px;
         font-size: 17px;
       }
+}
+
+@media (max-width: 1536px){
+    
+    #gerb{
+        width: 60px;
+        height: 60px;
+    }
+    nav{
+        padding: 0 50px;
+    }
 }
 
      /* media start */

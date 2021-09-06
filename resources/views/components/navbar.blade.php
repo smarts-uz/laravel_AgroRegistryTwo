@@ -1,7 +1,7 @@
 
 
    <nav class="navbar navbar-expand-lg navbar-light bg-white " style="border:1px solid rgb(0,0,0,0.1);">
-        <div class="container d-flex align-items-center justify-content-beetwen">
+        <div class="container-fluid d-flex align-items-center justify-content-beetwen">
                 <div>
                     <a class="navbar-brand d-flex align-items-center" href="#">
                         <img src="{{asset('images/layout/gerb.png')}}" id="gerb">
@@ -33,17 +33,17 @@
                             </button>
                         </div>
                     </div>
-
-                    
+                   
 
                     <a class="btn btn-success text-white" type="submit" id="headerButton">Заказать услугу</a>
+                    
                 </div>            
         </div>
     </nav>
 
 
     <nav class="bg-white" id="headNavbar"> 
-        <div class="container nav d-flex justify-content-between">
+        <div class="container-fluid nav d-flex justify-content-between">
             <a class="p-4 link-secondary active" href="#" >ГЛАВНАЯ</a>
             <a class="p-4 link-secondary" href="#">ИСПЫТАНИЯ</a>
             <a class="p-4 link-secondary" href="#">СЕРТИФИКАЦИЯ</a>
