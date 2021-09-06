@@ -1,0 +1,13 @@
+{
+    "name": "Impersonate",
+    "alias": "impersonate",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Impersonate\\Providers\\ImpersonateServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

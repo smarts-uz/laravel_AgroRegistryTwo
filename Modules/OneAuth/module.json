@@ -1,0 +1,13 @@
+{
+    "name": "OneAuth",
+    "alias": "oneauth",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\OneAuth\\Providers\\OneAuthServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

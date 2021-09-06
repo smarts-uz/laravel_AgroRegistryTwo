@@ -1,0 +1,765 @@
+@page {
+    margin: 0
+}
+.sheet {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    page-break-after: always;
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-MediumItalic.eot');
+    src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'),
+        url('font/Roboto-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-MediumItalic.woff') format('woff'),
+        url('font/Roboto-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-Italic.eot');
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+        url('font/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-Italic.woff') format('woff'),
+        url('font/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-Bold.eot');
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('font/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-Bold.woff') format('woff'),
+        url('font/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-Regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('font/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-Regular.woff') format('woff'),
+        url('font/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-Medium.eot');
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+        url('font/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-Medium.woff') format('woff'),
+        url('font/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-BoldItalic.eot');
+    src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'),
+        url('font/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-BoldItalic.woff') format('woff'),
+        url('font/Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-ThinItalic.eot');
+    src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'),
+        url('font/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-ThinItalic.woff') format('woff'),
+        url('font/Roboto-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-Black.eot');
+    src: local('Roboto Black'), local('Roboto-Black'),
+        url('font/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-Black.woff') format('woff'),
+        url('font/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-Light.eot');
+    src: local('Roboto Light'), local('Roboto-Light'),
+        url('font/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-Light.woff') format('woff'),
+        url('font/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-LightItalic.eot');
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+        url('font/Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-LightItalic.woff') format('woff'),
+        url('font/Roboto-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-BlackItalic.eot');
+    src: local('Roboto Black Italic'), local('Roboto-BlackItalic'),
+        url('font/Roboto-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-BlackItalic.woff') format('woff'),
+        url('font/Roboto-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-Thin.eot');
+    src: local('Roboto Thin'), local('Roboto-Thin'),
+        url('font/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+        url('font/Roboto-Thin.woff') format('woff'),
+        url('font/Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+/** Paper sizes **/
+@page {
+    margin: 0
+}
+
+
+
+/** Paper sizes **/
+body.A3 .sheet {
+    width: 297mm;
+    height: 419mm
+}
+
+body.A3.landscape .sheet {
+    width: 420mm;
+    height: 296mm
+}
+
+body.A4 .sheet {
+    width: 210mm;
+    height: 296mm
+}
+
+body.A4.landscape .sheet {
+    width: 297mm;
+    height: 209mm
+}
+
+body.A5 .sheet {
+    width: 148mm;
+    height: 209mm
+}
+
+body.A5.landscape .sheet {
+    width: 210mm;
+    height: 147mm
+}
+
+body.letter .sheet {
+    width: 216mm;
+    height: 279mm
+}
+
+body.letter.landscape .sheet {
+    width: 280mm;
+    height: 215mm
+}
+
+body.legal .sheet {
+    width: 216mm;
+    height: 356mm
+}
+
+body.legal.landscape .sheet {
+    width: 357mm;
+    height: 215mm
+}
+
+/** Padding area **/
+.sheet.padding-10mm {
+    padding: 10mm
+}
+
+.sheet.padding-15mm {
+    padding: 15mm
+}
+
+.sheet.padding-20mm {
+    padding: 20mm
+}
+
+.sheet.padding-25mm {
+    padding: 25mm
+}
+
+/** For screen preview **/
+@media screen {
+    .sheet {
+        background: white;
+        box-shadow: 0 .5mm 2mm rgba(0, 0, 0, .3);
+        margin: 5mm auto;
+    }
+}
+
+/** Fix for Chrome issue #273306 **/
+@media print {
+
+    .mg-t-90 {
+        margin-top: 0 !important;
+    }
+
+    body.A3.landscape {
+        width: 420mm
+    }
+
+    body.A3,
+    body.A4.landscape {
+        width: 297mm
+    }
+
+    body.A4,
+    body.A5.landscape {
+        width: 210mm !important;
+    }
+
+    body.A5 {
+        width: 148mm
+    }
+
+    body.letter,
+    body.legal {
+        width: 216mm
+    }
+
+    body.letter.landscape {
+        width: 280mm
+    }
+
+    body.legal.landscape {
+        width: 357mm
+    }
+}
+
+@media print {
+    .hidden-print {
+        display: none !important;
+    }
+}
+
+.sheet {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    page-break-after: always;
+}
+
+/** Paper sizes **/
+div.A3 .sheet {
+    width: 297mm;
+    height: 419mm
+}
+
+div.A3.landscape .sheet {
+    width: 420mm;
+    height: 296mm
+}
+
+div.A4 .sheet {
+    width: 210mm;
+    height: 296mm
+}
+
+div.A4.landscape .sheet {
+    width: 297mm;
+    height: 209mm
+}
+
+div.A5 .sheet {
+    width: 148mm;
+    height: 209mm
+}
+
+div.A5.landscape .sheet {
+    width: 210mm;
+    height: 147mm
+}
+
+div.letter .sheet {
+    width: 216mm;
+    height: 279mm
+}
+
+div.letter.landscape .sheet {
+    width: 280mm;
+    height: 215mm
+}
+
+div.legal .sheet {
+    width: 216mm;
+    height: 356mm
+}
+
+div.legal.landscape .sheet {
+    width: 357mm;
+    height: 215mm
+}
+
+/** Padding area **/
+.sheet.padding-10mm {
+    padding: 10mm
+}
+
+.sheet.padding-15mm {
+    padding: 15mm
+}
+
+.sheet.padding-20mm {
+    padding: 20mm
+}
+
+.sheet.padding-25mm {
+    padding: 25mm
+}
+
+/** For screen preview **/
+@media screen {
+    .sheet {
+        background: white;
+        border: 1px solid #ddd;
+        margin: 5mm auto;
+    }
+}
+
+/** Fix for Chrome issue #273306 **/
+@media print {
+    section.A3.landscape {
+        width: 420mm
+    }
+
+    section.A3,
+    section.A4.landscape {
+        width: 297mm
+    }
+
+    section.A4,
+    section.A5.landscape {
+        width: 210mm
+    }
+
+    section.A5 {
+        width: 148mm
+    }
+
+    section.letter,
+    section.legal {
+        width: 216mm
+    }
+
+    section.letter.landscape {
+        width: 280mm
+    }
+
+    section.legal.landscape {
+        width: 357mm
+    }
+}
+
+
+.text-indent-25 {
+    text-indent: 25px;
+}
+
+.tx-bolder {
+    font-weight: 900;
+}
+
+.tx-bold {
+    font-weight: 700;
+}
+
+.tx-semibold {
+    font-weight: 500;
+}
+
+.tx-medium {
+    font-weight: 500;
+}
+
+.tx-normal {
+    font-weight: 400;
+}
+
+.tx-light {
+    font-weight: 300;
+}
+
+.tx-thin {
+    font-weight: 200;
+}
+
+.tx-xthin {
+    font-weight: 100;
+}
+
+.tx-500 {
+    font-weight: 500;
+}
+
+.tx-600 {
+    font-weight: 600;
+}
+
+.tx-700 {
+    font-weight: 700;
+}
+
+.tx-sans-serif {
+    font-family: "Arial", sans-serif;
+}
+
+.tx-serif {
+    font-family: "Roboto Slab", serif;
+}
+
+.tx-sans {
+    font-family: "Arial", sans-serif;
+}
+
+.tx-mono {
+    font-family: "Roboto Mono", monospace;
+}
+
+.tx-secondary {
+    font-family: "Arial", sans-serif;
+}
+
+.tx-numeric {
+    font-family: "Arial", sans-serif;
+}
+
+.tx-uppercase {
+    text-transform: uppercase;
+}
+
+.tx-lowercase {
+    text-transform: lowercase;
+}
+
+.tx-transform-none {
+    text-transform: none;
+}
+
+.tx-shadow-none {
+    text-shadow: none;
+}
+
+.tx-center {
+    text-align: center;
+}
+
+.tx-right {
+    text-align: right;
+}
+
+.tx-left {
+    text-align: left;
+}
+
+.tx-center-f {
+    text-align: center !important;
+}
+
+.tx-right-f {
+    text-align: right !important;
+}
+
+.tx-left-f {
+    text-align: left !important;
+}
+
+.tx-italic {
+    font-style: italic;
+}
+
+.tx-style-normal {
+    font-style: normal;
+}
+
+.tx-nowrap {
+    white-space: nowrap;
+}
+
+.tx-8 {
+    font-size: 8px;
+}
+
+.tx-8-f {
+    font-size: 8px !important;
+}
+
+.tx-9 {
+    font-size: 9px;
+}
+
+.tx-9-f {
+    font-size: 9px !important;
+}
+
+.tx-10 {
+    font-size: 10px;
+}
+
+.tx-10-f {
+    font-size: 10px !important;
+}
+
+.tx-11 {
+    font-size: 11px;
+}
+
+.tx-11-f {
+    font-size: 11px !important;
+}
+
+.tx-12 {
+    font-size: 12px;
+}
+
+.tx-12-f {
+    font-size: 12px !important;
+}
+
+.tx-13 {
+    font-size: 13px;
+}
+
+.tx-13-f {
+    font-size: 13px !important;
+}
+
+.tx-14 {
+    font-size: 14px;
+}
+
+.tx-14-f {
+    font-size: 14px !important;
+}
+
+.tx-15 {
+    font-size: 15px;
+}
+
+.tx-15-f {
+    font-size: 15px !important;
+}
+
+.tx-16 {
+    font-size: 16px;
+}
+
+.tx-16-f {
+    font-size: 16px !important;
+}
+
+.tx-18 {
+    font-size: 18px;
+}
+
+.tx-18-f {
+    font-size: 18px !important;
+}
+
+.tx-20 {
+    font-size: 20px;
+}
+
+.tx-20-f {
+    font-size: 20px !important;
+}
+
+.tx-22 {
+    font-size: 22px;
+}
+
+.tx-22-f {
+    font-size: 22px !important;
+}
+
+.tx-24 {
+    font-size: 24px;
+}
+
+.tx-24-f {
+    font-size: 24px !important;
+}
+
+.tx-26 {
+    font-size: 26px;
+}
+
+.tx-26-f {
+    font-size: 26px !important;
+}
+
+.tx-28 {
+    font-size: 28px;
+}
+
+.tx-28-f {
+    font-size: 28px !important;
+}
+
+.tx-30 {
+    font-size: 30px;
+}
+
+.tx-30-f {
+    font-size: 30px !important;
+}
+
+.tx-32 {
+    font-size: 32px;
+}
+
+.tx-32-f {
+    font-size: 32px !important;
+}
+
+.tx-34 {
+    font-size: 34px;
+}
+
+.tx-34-f {
+    font-size: 34px !important;
+}
+
+
+.mg-35 {
+    margin: 35px;
+}
+
+.mg-35-f {
+    margin: 35px !important;
+}
+
+.mg-y-35 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.mg-y-35-f {
+    margin-top: 35px !important;
+    margin-bottom: 35px !important;
+}
+
+.mg-x-35 {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.mg-x-35-f {
+    margin-left: 35px !important;
+    margin-right: 35px !important;
+}
+
+.mg-t-35 {
+    margin-top: 35px;
+}
+
+.mg-r-35 {
+    margin-right: 35px;
+}
+
+.mg-b-35 {
+    margin-bottom: 35px;
+}
+
+.mg-l-35 {
+    margin-left: 35px;
+}
+
+.mg-t-35-f {
+    margin-top: 35px !important;
+}
+
+.mg-r-35-f {
+    margin-right: 35px !important;
+}
+
+.mg-b-35-f {
+    margin-bottom: 35px !important;
+}
+
+.mg-l-35-f {
+    margin-left: 35px !important;
+}
+
+.mg-b-20 {
+    margin-bottom: 20px;
+}
+
+.mg-t-20 {
+    margin-top: 20px;
+}
+
+.mg-t-10 {
+    margin-top: 10px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.zui-table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+    width: 98%;
+}
+
+.zui-table thead th {
+    background-color: #ccc;
+    border: solid 1px #000;
+    color: #000000;
+    padding: 10px;
+    text-align: left;
+}
+
+.zui-table tbody td {
+    border: solid 1px #000;
+    color: #333;
+    padding: 10px;
+}
